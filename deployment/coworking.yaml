@@ -53,11 +53,4 @@ spec:
             secretKeyRef:
               name: secrets.yml
               key: my-postgres-db-password
-        envFrom:
-        - configMapRef:
-            name: configmap.yaml
-         secretRef:
-              name: my-postgres-db-password
-          - configMapRef:
-              name: my-postgres-db-configmap
       restartPolicy: Always
