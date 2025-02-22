@@ -3,29 +3,21 @@
 The Coworking Space Service is a set of APIs that enables users to request one-time tokens and administrators to authorize access to a coworking space. This service follows a microservice pattern and the APIs are split into distinct services that can be deployed and managed independently of one another.he API provides business analysts with basic analytics data on user activity in the coworking space service. The application they provide you functions as expected, and you will help build a pipeline to deploy it to Kubernetes. You'll submit artefacts from the build and deployment of this service.
 
 
-# Step 1: Set Up a Postgres Database with Helm Chart
+# Step 1: Set Up a Postgres Database 
 Pre-requisites:
 - Have Kubernetes cluster ready.
 - Have `kubectl` installed and configured to interact with your cluster.
-- Have Helm installed.
+- Have postgres installed.
 
 Instructions:
-1. Install Helm:
+1. Install postgres:
    ```bash
-   curl -LO https://get.helm.sh/helm-v3.12.2-linux-amd64.tar.gz
+   kubectl apply -f pvc.yaml
+   kubectl apply -f pv.yaml
+   kubectl apply -f postgresql-deployment.yaml
    ```
-2. Add the Bitnami Helm Repository:
-    ```bash
-   helm repo add bitnami https://charts.bitnami.com/bitnami
-   helm repo update
-   ```
-3. Install the PostgreSQL Chart:
+2. Verify the Installation:
    ```bash
-   helm install my-postgres bitnami/postgresql
-   ```
-4. Verify the Installation:
-   ```bash
-   helm list
    kubectl get pods
    ```
 5. Get the PostgreSQL Connection Details:
