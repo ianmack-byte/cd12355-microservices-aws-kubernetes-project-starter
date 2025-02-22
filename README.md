@@ -43,40 +43,22 @@ BulidCode history
    kubectl get svc
    kubectl describe svc
    ```
-   List Services
-   ![List Services](Project%20screenshots/ListServices.png)
-   List Describe Services Kubernetes
-   ![List Describe Services Kubernetes](Project%20screenshots/DescribeSvcKubernetes.png)
-   List Describe Services Postgres DB
-   ![List Describe Services Postgres DB](Project%20screenshots/DescribeSvcMy-postgres-postgresql.png)
-   List Describe Services Project3 API
-   ![List Describe Services Project3 API](Project%20screenshots/DescribeSvcProject3-api.png)
+   
 
 3. List Pods
    ```bash
    kubectl get pods
    kubectl describe pods
    ```
-   List Pods
-   ![List Pods](Project screenshots/ListPods.png)
-   List Describe Pods DB
-   ![List Describe Pods DB](Project%20screenshots/GetPodsDescribeMy-postgres-postgresql-0.png)
-   List Describe Pods API
-   ![List Describe Pods API](Project%20screenshots/GetPodsDescribeProject3-api-dbd9446-smh74.png)
+   
    
 4. List Deployments
    ```bash
    kubectl get deployments
-   kubectl describe deployment project3-api
+   kubectl describe deployment coworking
    ```
-   List Deployments
-   ![List Deployments](Project%20screenshots/ListDeployments.png)
-   List Describe Deployments
-   ![List Describe Deployments](Project%20screenshots/ListDescribeDeployments.png)
+   
 
 ## AWS CloudWatch for Logs
    
-   CloudWatch Cluster Logs
-   ![CloudWatch Cluster Logs](Project%20screenshots/CloudWatch-ClusterLogs.png)
-   CloudWatch Logs
-   ![CloudWatch Logs](Project%20screenshots/CloudWatch-Logs.png)
+  ##See Screenshots.pdf for screenshots
