@@ -34,9 +34,6 @@ Dockerfile
 buildspec File
 [buildspec](./buildspec.yml)
 
-BulidCode history
-![BulidCode history](Project%20screenshots/codebuild.png)
-
 ## Create Kubernetes Service and Deployment
 1. List Services
    ```bash
